@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отзывы
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+         <h1>Feedback</h1>
+    </div>
+<form method="post">
+        <input type="text" name="title" id="title" class="container form-control" placeholder="Your topic"><br>
+            <textarea name="intro" id="intro" class="container form-control" placeholder="Write your message"></textarea><br>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <input type="submit" class="btn btn-sucsess" value="Post">
+            </div>
+    </form>
+{% endblock %}
